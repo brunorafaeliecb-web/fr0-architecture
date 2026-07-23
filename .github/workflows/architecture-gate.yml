@@ -9,22 +9,39 @@ on:
       - main
   workflow_dispatch:
 
+permissions:
+  contents: read
+
+concurrency:
+  group: architecture-gate-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 jobs:
   validate-fr0:
     name: FR-0 V0-V8 Architecture Gate
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-ci.txt
 
-      - name: Install dependencies
-        run: python -m pip install --upgrade pip jsonschema
+      - name: Install CI dependencies
+        run: |
+          python -m pip install --disable-pip-version-check --upgrade pip
+          python -m pip install --disable-pip-version-check -r requirements-ci.txt
+
+      - name: Compile Python sources
+        run: python -m compileall -q src tests
 
       - name: Validate architecture V0-V8
         run: python -m src.fr0 validate
@@ -37,6 +54,15 @@ jobs:
 
       - name: Verify clean generated artifacts
         run: |
-          git diff --exit-code \
+          git diff --exit-code -- \
             baseline/AB-FR0-001.lock.json \
             reports/validation-v0-v8.json
+
+      - name: Publish validation evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fr0-validation-evidence
+          path: reports/validation-v0-v8.json
+          if-no-files-found: error
+          retention-days: 14
