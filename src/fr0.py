@@ -11,6 +11,11 @@ from typing import Any, Iterable
 
 from jsonschema import Draft202012Validator
 
+from .architecture_test_engine import (
+    ArchitectureTestEngine,
+    StageDefinition,
+)
+
 from .jcs import canonicalize
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -318,32 +323,116 @@ def validate_exceptions(artifacts: dict[str, Path]) -> list[Finding]:
             findings.append(Finding("V8", "EXCEPTION_GOVERNANCE_INCOMPLETE", "ERROR", str(eid)))
     return findings
 
+
 def validate() -> dict[str, Any]:
-    artifacts, findings = discover()
-    findings += validate_schemas(artifacts)
-    if not any(f.stage in {"V0", "V1"} and f.severity == "ERROR" for f in findings):
-        findings += validate_identity(artifacts)
-        findings += validate_references(artifacts)
-        findings += validate_ownership_consistency(artifacts)
-        findings += validate_dependency_consistency(artifacts)
-        findings += validate_contract_compatibility(artifacts)
-        findings += validate_invariant_coverage(artifacts)
-        findings += validate_exceptions(artifacts)
-    stage_results = {}
-    for stage in ["V0", "V1", "V2", "V3", "V4", "V5", "V6", "V7", "V8"]:
-        errors = [f for f in findings if f.stage == stage and f.severity == "ERROR"]
-        stage_results[stage] = "FAIL" if errors else "PASS"
-    result = "PASS" if all(v == "PASS" for v in stage_results.values()) else "FAIL"
-    report = {
-        "validation_id": "VAL-AB-FR0-001-V0-V8",
-        "baseline_id": "AB-FR0-001",
-        "validator_version": "1.1.0",
-        "stages": stage_results,
-        "result": result,
-        "findings": [asdict(f) for f in findings],
-    }
-    REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    REPORT_PATH.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
+    context: dict[str, Any] = {}
+
+    def run_discovery(
+        execution_context: dict[str, Any],
+    ) -> list[Finding]:
+        artifacts, findings = discover()
+        execution_context["artifacts"] = artifacts
+        return findings
+
+    def get_artifacts(
+        execution_context: dict[str, Any],
+    ) -> dict[str, Path]:
+        return execution_context.get("artifacts", {})
+
+    stages = (
+        StageDefinition(
+            stage_id="V0",
+            canonical_name="ArtifactDiscovery",
+            runner=run_discovery,
+        ),
+        StageDefinition(
+            stage_id="V1",
+            canonical_name="SchemaValidation",
+            runner=lambda ctx: validate_schemas(
+                get_artifacts(ctx)
+            ),
+            depends_on=("V0",),
+        ),
+        StageDefinition(
+            stage_id="V2",
+            canonical_name="IdentityAndUniqueness",
+            runner=lambda ctx: validate_identity(
+                get_artifacts(ctx)
+            ),
+            depends_on=("V1",),
+        ),
+        StageDefinition(
+            stage_id="V3",
+            canonical_name="ReferenceIntegrity",
+            runner=lambda ctx: validate_references(
+                get_artifacts(ctx)
+            ),
+            depends_on=("V1",),
+        ),
+        StageDefinition(
+            stage_id="V4",
+            canonical_name="OwnershipConsistency",
+            runner=lambda ctx: validate_ownership_consistency(
+                get_artifacts(ctx)
+            ),
+            depends_on=("V1",),
+        ),
+        StageDefinition(
+            stage_id="V5",
+            canonical_name="DependencyConsistency",
+            runner=lambda ctx: validate_dependency_consistency(
+                get_artifacts(ctx)
+            ),
+            depends_on=("V1",),
+        ),
+        StageDefinition(
+            stage_id="V6",
+            canonical_name="ContractCompatibility",
+            runner=lambda ctx: validate_contract_compatibility(
+                get_artifacts(ctx)
+            ),
+            depends_on=("V1",),
+        ),
+        StageDefinition(
+            stage_id="V7",
+            canonical_name="InvariantCoverage",
+            runner=lambda ctx: validate_invariant_coverage(
+                get_artifacts(ctx)
+            ),
+            depends_on=("V1",),
+        ),
+        StageDefinition(
+            stage_id="V8",
+            canonical_name="ExceptionValidation",
+            runner=lambda ctx: validate_exceptions(
+                get_artifacts(ctx)
+            ),
+            depends_on=("V1",),
+        ),
+    )
+
+    report = ArchitectureTestEngine(stages).run(
+        validation_id="VAL-AB-FR0-001-V0-V8",
+        baseline_id="AB-FR0-001",
+        validator_version="1.2.0",
+        context=context,
+        finding_serializer=asdict,
+    )
+
+    REPORT_PATH.parent.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    REPORT_PATH.write_text(
+        json.dumps(
+            report,
+            indent=2,
+            ensure_ascii=False,
+        ) + "\n",
+        encoding="utf-8",
+    )
+
     return report
 
 
