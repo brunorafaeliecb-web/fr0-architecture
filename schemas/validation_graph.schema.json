@@ -54,5 +54,6 @@
         }
       }
     }
-  }
+  },
+  "$id": "urn:fr0:schema:validation-graph:v1"
 }

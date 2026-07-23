@@ -89,5 +89,6 @@
       },
       "additionalProperties": false
     }
-  }
+  },
+  "$id": "urn:fr0:schema:baseline:v1"
 }

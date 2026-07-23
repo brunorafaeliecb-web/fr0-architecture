@@ -65,5 +65,6 @@
         }
       }
     }
-  }
+  },
+  "$id": "urn:fr0:schema:traceability:v1"
 }

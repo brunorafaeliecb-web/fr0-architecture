@@ -105,5 +105,6 @@
         "type": "object"
       }
     }
-  }
+  },
+  "$id": "urn:fr0:schema:ownership:v1"
 }
