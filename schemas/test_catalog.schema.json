@@ -67,5 +67,6 @@
         }
       }
     }
-  }
+  },
+  "$id": "urn:fr0:schema:test-catalog:v1"
 }

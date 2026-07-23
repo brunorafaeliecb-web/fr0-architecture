@@ -55,5 +55,6 @@
         }
       }
     }
-  }
+  },
+  "$id": "urn:fr0:schema:context:v1"
 }

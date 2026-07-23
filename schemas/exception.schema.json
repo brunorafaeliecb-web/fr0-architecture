@@ -57,5 +57,6 @@
         "minLength": 1
       }
     }
-  }
+  },
+  "$id": "urn:fr0:schema:exception:v1"
 }

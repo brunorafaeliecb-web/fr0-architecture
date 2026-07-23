@@ -99,5 +99,6 @@
         }
       }
     }
-  }
+  },
+  "$id": "urn:fr0:schema:invariant:v1"
 }

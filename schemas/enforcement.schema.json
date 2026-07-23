@@ -78,5 +78,6 @@
         }
       }
     }
-  }
+  },
+  "$id": "urn:fr0:schema:enforcement:v1"
 }

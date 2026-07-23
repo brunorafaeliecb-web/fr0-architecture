@@ -70,5 +70,6 @@
         }
       }
     }
-  }
+  },
+  "$id": "urn:fr0:schema:risk:v1"
 }
