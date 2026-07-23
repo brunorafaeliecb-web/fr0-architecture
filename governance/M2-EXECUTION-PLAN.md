@@ -44,8 +44,8 @@ Cada work package deverá:
 
 | Gate | Descrição | Status |
 |---|---|---|
-| M2-G1 | Escopo e dependências confirmados | IN_PROGRESS |
-| M2-G2 | Work packages implementados | NOT_STARTED |
+| M2-G1 | Escopo e dependências confirmados | SATISFIED |
+| M2-G2 | Work packages implementados | IN_PROGRESS |
 | M2-G3 | Integração e testes concluídos | NOT_STARTED |
 | M2-G4 | Release manifest e encerramento | NOT_STARTED |
 
@@ -56,3 +56,4 @@ registries, contratos, testes e mecanismos de rastreabilidade do FR-0.
 
 A revisão independente continua obrigatória antes de qualquer promoção
 para produção.
+
