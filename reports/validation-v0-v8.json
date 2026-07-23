@@ -1,0 +1,18 @@
+{
+  "validation_id": "VAL-AB-FR0-001-V0-V8",
+  "baseline_id": "AB-FR0-001",
+  "validator_version": "1.1.0",
+  "stages": {
+    "V0": "PASS",
+    "V1": "PASS",
+    "V2": "PASS",
+    "V3": "PASS",
+    "V4": "PASS",
+    "V5": "PASS",
+    "V6": "PASS",
+    "V7": "PASS",
+    "V8": "PASS"
+  },
+  "result": "PASS",
+  "findings": []
+}

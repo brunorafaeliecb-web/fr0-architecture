@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "registry_id",
+    "registry_version",
+    "architecture_baseline_id",
+    "status",
+    "tests"
+  ],
+  "properties": {
+    "registry_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "registry_version": {
+      "type": "integer",
+      "const": 1
+    },
+    "architecture_baseline_id": {
+      "type": "string",
+      "const": "AB-FR0-001"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "APPROVED"
+      ]
+    },
+    "tests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "test_id",
+          "test_group",
+          "target_type",
+          "target_id",
+          "polarity"
+        ],
+        "properties": {
+          "test_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "test_group": {
+            "type": "string",
+            "minLength": 1
+          },
+          "target_type": {
+            "type": "string",
+            "minLength": 1
+          },
+          "target_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "polarity": {
+            "enum": [
+              "POSITIVE",
+              "NEGATIVE"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

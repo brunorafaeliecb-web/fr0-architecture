@@ -1,0 +1,33 @@
+{
+  "registry_version": 1,
+  "architecture_baseline_id": "AB-FR0-001",
+  "status": "DRAFT",
+  "registry_id": "CAPABILITY-REGISTRY",
+  "capabilities": [
+    {
+      "capability_id": "CAP-ARCH-BASELINE-MANAGE",
+      "semantic_owner": "CTX-GOV",
+      "priority": "BLOCKER"
+    },
+    {
+      "capability_id": "CAP-ARCH-VALIDATION-RUN",
+      "semantic_owner": "CTX-GOV",
+      "priority": "BLOCKER"
+    },
+    {
+      "capability_id": "CAP-ARCH-EXCEPTION-MANAGE",
+      "semantic_owner": "CTX-GOV",
+      "priority": "BLOCKER"
+    },
+    {
+      "capability_id": "CAP-ARCH-EVIDENCE-RECORD",
+      "semantic_owner": "CTX-EVIDENCE",
+      "priority": "BLOCKER"
+    },
+    {
+      "capability_id": "CAP-RELEASE-MANIFEST-GENERATE",
+      "semantic_owner": "CTX-CHANGE",
+      "priority": "BLOCKER"
+    }
+  ]
+}

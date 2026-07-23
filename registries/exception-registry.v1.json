@@ -1,0 +1,21 @@
+{
+  "registry_version": 1,
+  "architecture_baseline_id": "AB-FR0-001",
+  "status": "DRAFT",
+  "registry_id": "EXCEPTION-REGISTRY",
+  "exceptions": [],
+  "non_waivable_controls": [
+    "ENF-BLK-001",
+    "ENF-BLK-002",
+    "ENF-BLK-003",
+    "ENF-BLK-004",
+    "ENF-BLK-005",
+    "ENF-BLK-006",
+    "ENF-BLK-007",
+    "ENF-BLK-008",
+    "ENF-BLK-009",
+    "ENF-BLK-010",
+    "ENF-BLK-011",
+    "ENF-BLK-012"
+  ]
+}

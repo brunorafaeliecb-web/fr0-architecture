@@ -1,0 +1,91 @@
+{
+  "baseline_id": "AB-FR0-001",
+  "baseline_version": 1,
+  "canonicalization": {
+    "specification": "RFC-8785",
+    "profile": "FR0-INTEGER-ONLY",
+    "encoding": "UTF-8"
+  },
+  "digest": {
+    "algorithm": "SHA-256",
+    "baseline_digest": "bf6e94b578c1a9a6e2cbd3cddbd9d681d4fa2a8d2abf9a411a0751e1f6ee6bad"
+  },
+  "registries": {
+    "context": {
+      "registry_id": "CONTEXT-REGISTRY",
+      "version": 1,
+      "digest": "128cd9123cd0501bbebef7de663ec89cbdde1a3c399dad81973902f301ef7d41"
+    },
+    "ownership": {
+      "registry_id": "OWNERSHIP-REGISTRY",
+      "version": 1,
+      "digest": "48633ca8acebb3346d8ee81740d28631b40c3ca3fcad9685899cde76204574dc"
+    },
+    "invariant": {
+      "registry_id": "INVARIANT-REGISTRY",
+      "version": 1,
+      "digest": "8048807cfd1692e09c81d21c7a9501bbf93f23e60862a2690c1b2c620614b1a5"
+    },
+    "enforcement": {
+      "registry_id": "ENFORCEMENT-REGISTRY",
+      "version": 1,
+      "digest": "1201dc65d196be6be20086f598bc1766ab341a57bb53a48985da3b028a683210"
+    },
+    "contract": {
+      "registry_id": "CONTRACT-REGISTRY",
+      "version": 1,
+      "digest": "a32bfb125bb8436f85ea61fe20e964d74b48dbed5c7994b1504eb49378675134"
+    },
+    "capability": {
+      "registry_id": "CAPABILITY-REGISTRY",
+      "version": 1,
+      "digest": "2032576ce3740a5808ad5b6241a335f6d2c7f847172e0ca6c684a5710bb6f30d"
+    },
+    "test_catalog": {
+      "registry_id": "ARCHITECTURE-TEST-CATALOG",
+      "version": 1,
+      "digest": "80b721352d95775f443a1a4cf2f796daeddd9a75ec05d83e4ae68fd4128d3d52"
+    },
+    "traceability": {
+      "registry_id": "TRACEABILITY-REGISTRY",
+      "version": 1,
+      "digest": "3d0e80d56d24971c8507522fbbf5264e61cc0e3cb7b81095716d4fd7ab37a18e"
+    },
+    "exception": {
+      "registry_id": "EXCEPTION-REGISTRY",
+      "version": 1,
+      "digest": "b72938347710a3427da93056fd3553c0a02075778e8fa337967b6eba2369025c"
+    },
+    "risk": {
+      "registry_id": "RISK-REGISTRY",
+      "version": 1,
+      "digest": "24a6e3ca192923d306c9ab554f39f85454ff1874b801f377569a1170b764ec73"
+    },
+    "validation_graph": {
+      "registry_id": "ARCH-VALIDATION-GRAPH",
+      "version": 1,
+      "digest": "8488ec13437417fadddf52981edcb34dd55410d3997d21cdd923736bb92d4507"
+    },
+    "work_package_catalog": {
+      "registry_id": "FR0-WORK-PACKAGE-CATALOG",
+      "version": 1,
+      "digest": "b34f948cb56d541409a857e52d47cd36652c55dca9164a84ba2366b650af8e66"
+    }
+  },
+  "validation": {
+    "validation_id": "VAL-AB-FR0-001-V0-V8",
+    "validator_version": "1.1.0",
+    "stages": {
+      "V0": "PASS",
+      "V1": "PASS",
+      "V2": "PASS",
+      "V3": "PASS",
+      "V4": "PASS",
+      "V5": "PASS",
+      "V6": "PASS",
+      "V7": "PASS",
+      "V8": "PASS"
+    },
+    "result": "PASS"
+  }
+}

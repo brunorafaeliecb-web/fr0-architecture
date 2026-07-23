@@ -1,0 +1,204 @@
+{
+  "registry_version": 1,
+  "architecture_baseline_id": "AB-FR0-001",
+  "status": "DRAFT",
+  "registry_id": "CONTRACT-REGISTRY",
+  "contracts": [
+    {
+      "contract_id": "QRY-ARCH-BASELINE-RESOLVE",
+      "canonical_name": "ResolveArchitectureBaseline",
+      "interaction_type": "QUERY",
+      "semantic_owner": "CTX-GOV",
+      "producer_contexts": [
+        "CTX-DEV"
+      ],
+      "authorized_consumers": [
+        "CTX-GOV"
+      ],
+      "contract_version": 1,
+      "status": "DRAFT"
+    },
+    {
+      "contract_id": "CMD-ARCH-BASELINE-SUBMIT",
+      "canonical_name": "SubmitArchitectureBaseline",
+      "interaction_type": "COMMAND",
+      "semantic_owner": "CTX-GOV",
+      "producer_contexts": [
+        "CTX-DEV"
+      ],
+      "authorized_consumers": [
+        "CTX-GOV"
+      ],
+      "contract_version": 1,
+      "status": "DRAFT"
+    },
+    {
+      "contract_id": "EVT-ARCH-BASELINE-SUBMITTED",
+      "canonical_name": "ArchitectureBaselineSubmitted",
+      "interaction_type": "EVENT",
+      "semantic_owner": "CTX-GOV",
+      "producer_contexts": [
+        "CTX-GOV"
+      ],
+      "authorized_consumers": [
+        "CTX-EVIDENCE"
+      ],
+      "contract_version": 1,
+      "status": "DRAFT"
+    },
+    {
+      "contract_id": "CMD-ARCH-VALIDATION-RUN",
+      "canonical_name": "RunArchitectureValidation",
+      "interaction_type": "COMMAND",
+      "semantic_owner": "CTX-GOV",
+      "producer_contexts": [
+        "CTX-DEV"
+      ],
+      "authorized_consumers": [
+        "CTX-GOV"
+      ],
+      "contract_version": 1,
+      "status": "DRAFT"
+    },
+    {
+      "contract_id": "DEC-ARCH-VALIDATION-RESULT",
+      "canonical_name": "ArchitectureValidationResult",
+      "interaction_type": "DECISION",
+      "semantic_owner": "CTX-GOV",
+      "producer_contexts": [
+        "CTX-GOV"
+      ],
+      "authorized_consumers": [
+        "CTX-DEV"
+      ],
+      "contract_version": 1,
+      "status": "DRAFT"
+    },
+    {
+      "contract_id": "EVT-ARCH-BASELINE-VALIDATED",
+      "canonical_name": "ArchitectureBaselineValidated",
+      "interaction_type": "EVENT",
+      "semantic_owner": "CTX-GOV",
+      "producer_contexts": [
+        "CTX-GOV"
+      ],
+      "authorized_consumers": [
+        "CTX-EVIDENCE"
+      ],
+      "contract_version": 1,
+      "status": "DRAFT"
+    },
+    {
+      "contract_id": "CMD-ARCH-BASELINE-APPROVE",
+      "canonical_name": "ApproveArchitectureBaseline",
+      "interaction_type": "COMMAND",
+      "semantic_owner": "CTX-GOV",
+      "producer_contexts": [
+        "CTX-GOV"
+      ],
+      "authorized_consumers": [
+        "CTX-GOV"
+      ],
+      "contract_version": 1,
+      "status": "DRAFT"
+    },
+    {
+      "contract_id": "EVT-ARCH-BASELINE-APPROVED",
+      "canonical_name": "ArchitectureBaselineApproved",
+      "interaction_type": "EVENT",
+      "semantic_owner": "CTX-GOV",
+      "producer_contexts": [
+        "CTX-GOV"
+      ],
+      "authorized_consumers": [
+        "CTX-CHANGE"
+      ],
+      "contract_version": 1,
+      "status": "DRAFT"
+    },
+    {
+      "contract_id": "CMD-ARCH-BASELINE-ACTIVATE",
+      "canonical_name": "ActivateArchitectureBaselineForImplementation",
+      "interaction_type": "COMMAND",
+      "semantic_owner": "CTX-GOV",
+      "producer_contexts": [
+        "CTX-CHANGE"
+      ],
+      "authorized_consumers": [
+        "CTX-GOV"
+      ],
+      "contract_version": 1,
+      "status": "DRAFT"
+    },
+    {
+      "contract_id": "EVT-ARCH-BASELINE-ACTIVATED",
+      "canonical_name": "ArchitectureBaselineActivatedForImplementation",
+      "interaction_type": "EVENT",
+      "semantic_owner": "CTX-GOV",
+      "producer_contexts": [
+        "CTX-GOV"
+      ],
+      "authorized_consumers": [
+        "CTX-DEV"
+      ],
+      "contract_version": 1,
+      "status": "DRAFT"
+    },
+    {
+      "contract_id": "CMD-ARCH-EXCEPTION-REQUEST",
+      "canonical_name": "RequestArchitectureException",
+      "interaction_type": "COMMAND",
+      "semantic_owner": "CTX-GOV",
+      "producer_contexts": [
+        "CTX-DEV"
+      ],
+      "authorized_consumers": [
+        "CTX-GOV"
+      ],
+      "contract_version": 1,
+      "status": "DRAFT"
+    },
+    {
+      "contract_id": "EVT-ARCH-EXCEPTION-APPROVED",
+      "canonical_name": "ArchitectureExceptionApproved",
+      "interaction_type": "EVENT",
+      "semantic_owner": "CTX-GOV",
+      "producer_contexts": [
+        "CTX-GOV"
+      ],
+      "authorized_consumers": [
+        "CTX-EVIDENCE"
+      ],
+      "contract_version": 1,
+      "status": "DRAFT"
+    },
+    {
+      "contract_id": "CMD-EVIDENCE-RECORD",
+      "canonical_name": "RecordArchitectureEvidence",
+      "interaction_type": "COMMAND",
+      "semantic_owner": "CTX-EVIDENCE",
+      "producer_contexts": [
+        "CTX-GOV"
+      ],
+      "authorized_consumers": [
+        "CTX-EVIDENCE"
+      ],
+      "contract_version": 1,
+      "status": "DRAFT"
+    },
+    {
+      "contract_id": "EVT-RELEASE-MANIFEST-GENERATED",
+      "canonical_name": "ReleaseArchitectureManifestGenerated",
+      "interaction_type": "EVENT",
+      "semantic_owner": "CTX-CHANGE",
+      "producer_contexts": [
+        "CTX-CHANGE"
+      ],
+      "authorized_consumers": [
+        "CTX-EVIDENCE"
+      ],
+      "contract_version": 1,
+      "status": "DRAFT"
+    }
+  ]
+}

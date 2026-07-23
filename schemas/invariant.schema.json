@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "registry_id",
+    "registry_version",
+    "architecture_baseline_id",
+    "status",
+    "invariants"
+  ],
+  "properties": {
+    "registry_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "registry_version": {
+      "type": "integer",
+      "const": 1
+    },
+    "architecture_baseline_id": {
+      "type": "string",
+      "const": "AB-FR0-001"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "APPROVED"
+      ]
+    },
+    "invariants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "invariant_id",
+          "canonical_name",
+          "risk_family",
+          "normative_rule",
+          "semantic_owner",
+          "priority",
+          "enforcement_references",
+          "verification_tests",
+          "evidence_requirements",
+          "status"
+        ],
+        "properties": {
+          "invariant_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "canonical_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "risk_family": {
+            "type": "string",
+            "minLength": 1
+          },
+          "normative_rule": {
+            "type": "string",
+            "minLength": 1
+          },
+          "semantic_owner": {
+            "type": "string",
+            "minLength": 1
+          },
+          "priority": {
+            "type": "string",
+            "minLength": 1
+          },
+          "enforcement_references": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "verification_tests": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "evidence_requirements": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "status": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

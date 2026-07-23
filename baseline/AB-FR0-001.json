@@ -1,0 +1,55 @@
+{
+  "baseline_id": "AB-FR0-001",
+  "baseline_type": "DESIGN",
+  "baseline_version": 1,
+  "status": "DRAFT",
+  "target_release": "FR-0",
+  "implementation_pack_id": "FR0-IP-001",
+  "accountability": {
+    "model": "INDIVIDUAL_BOOTSTRAP",
+    "accountable_identity": "Rafael",
+    "independent_review_required": true
+  },
+  "normative_registries": {
+    "context": {
+      "version": 1
+    },
+    "ownership": {
+      "version": 1
+    },
+    "invariant": {
+      "version": 1
+    },
+    "enforcement": {
+      "version": 1
+    },
+    "contract": {
+      "version": 1
+    },
+    "capability": {
+      "version": 1
+    },
+    "test_catalog": {
+      "version": 1
+    },
+    "traceability": {
+      "version": 1
+    },
+    "exception": {
+      "version": 1
+    },
+    "risk": {
+      "version": 1
+    },
+    "validation_graph": {
+      "version": 1
+    },
+    "work_package_catalog": {
+      "version": 1
+    }
+  },
+  "integrity": {
+    "canonicalization_algorithm": "RFC-8785",
+    "digest_algorithm": "SHA-256"
+  }
+}

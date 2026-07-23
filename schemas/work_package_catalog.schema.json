@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "registry_id",
+    "registry_version",
+    "architecture_baseline_id",
+    "status",
+    "work_packages"
+  ],
+  "properties": {
+    "registry_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "registry_version": {
+      "type": "integer",
+      "const": 1
+    },
+    "architecture_baseline_id": {
+      "type": "string",
+      "const": "AB-FR0-001"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "APPROVED"
+      ]
+    },
+    "work_packages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "work_package_id",
+          "canonical_name",
+          "semantic_owner",
+          "implementation_owner",
+          "operation_owner",
+          "acceptance_authority"
+        ],
+        "properties": {
+          "work_package_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "canonical_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "semantic_owner": {
+            "type": "string",
+            "minLength": 1
+          },
+          "implementation_owner": {
+            "type": "string",
+            "minLength": 1
+          },
+          "operation_owner": {
+            "type": "string",
+            "minLength": 1
+          },
+          "acceptance_authority": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

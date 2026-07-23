@@ -1,0 +1,246 @@
+{
+  "registry_version": 1,
+  "architecture_baseline_id": "AB-FR0-001",
+  "status": "DRAFT",
+  "registry_id": "TRACEABILITY-REGISTRY",
+  "links": [
+    {
+      "invariant": "INV-OWN-001",
+      "control": "ENF-BLK-001",
+      "test": "CON-OWN-001",
+      "evidence": "SingleAuthoritativeOwner-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-OWN-002",
+      "control": "ENF-BLK-001",
+      "test": "CON-OWN-002",
+      "evidence": "CoordinationDoesNotTransferOwnership-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-OWN-003",
+      "control": "ENF-BLK-012",
+      "test": "CON-OWN-003",
+      "evidence": "ProjectionIsNotAuthority-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-AUTH-001",
+      "control": "ENF-BLK-003",
+      "test": "CON-AUTH-001",
+      "evidence": "EffectiveAuthorityIsIntersection-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-AUTH-002",
+      "control": "ENF-BLK-003",
+      "test": "CON-AUTH-002",
+      "evidence": "AvailabilityDoesNotGrantAuthority-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-AUTH-003",
+      "control": "ENF-BLK-003",
+      "test": "CON-AUTH-003",
+      "evidence": "EmergencyAuthorityIsBounded-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-STATE-001",
+      "control": "ENF-BLK-004",
+      "test": "CON-STATE-001",
+      "evidence": "StateCategoriesRemainDistinct-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-STATE-002",
+      "control": "ENF-BLK-004",
+      "test": "CON-STATE-002",
+      "evidence": "OnlyDomainOwnerTransitionsState-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-STATE-003",
+      "control": "ENF-BLK-004",
+      "test": "CON-STATE-003",
+      "evidence": "TerminalStateResistsStaleResurrection-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-EXEC-001",
+      "control": "ENF-BLK-003",
+      "test": "CON-EXEC-001",
+      "evidence": "AuthorizationAndExecutionStagesRemainDistinct-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-EXEC-002",
+      "control": "ENF-BLK-010",
+      "test": "CON-EXEC-002",
+      "evidence": "ToolSuccessDoesNotProveBusinessSuccess-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-EXEC-003",
+      "control": "ENF-BLK-008",
+      "test": "CON-EXEC-003",
+      "evidence": "PlacementDoesNotGrantAuthority-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-RETRY-001",
+      "control": "ENF-BLK-007",
+      "test": "CON-RETRY-001",
+      "evidence": "OneOperationOneRetryOwner-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-RETRY-002",
+      "control": "ENF-BLK-010",
+      "test": "CON-RETRY-002",
+      "evidence": "UnknownOutcomeRequiresReconciliation-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-RETRY-003",
+      "control": "ENF-BLK-007",
+      "test": "CON-RETRY-003",
+      "evidence": "RetryBudgetIsEndToEnd-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-CONV-001",
+      "control": "ENF-BLK-009",
+      "test": "CON-CONV-001",
+      "evidence": "TransportIsNotConvergence-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-CONV-002",
+      "control": "ENF-BLK-009",
+      "test": "CON-CONV-002",
+      "evidence": "StateEqualityDoesNotProveConvergence-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-CONV-003",
+      "control": "ENF-BLK-009",
+      "test": "CON-CONV-003",
+      "evidence": "RevocationFirstReconnect-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-ID-001",
+      "control": "ENF-BLK-005",
+      "test": "CON-ID-001",
+      "evidence": "CredentialValidityIsNotAuthority-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-ID-002",
+      "control": "ENF-BLK-005",
+      "test": "CON-ID-002",
+      "evidence": "CompleteActorChainIsPreserved-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-ID-003",
+      "control": "ENF-BLK-008",
+      "test": "CON-ID-003",
+      "evidence": "DerivedCredentialsDoNotExpandAuthority-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-TEN-001",
+      "control": "ENF-BLK-002",
+      "test": "CON-TEN-001",
+      "evidence": "TenantMatchIsInsufficient-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-TEN-002",
+      "control": "ENF-BLK-002",
+      "test": "CON-TEN-002",
+      "evidence": "TenantScopeCannotComeOnlyFromPayload-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-TEN-003",
+      "control": "ENF-BLK-002",
+      "test": "CON-TEN-003",
+      "evidence": "CrossTenantAccessIsNotOwnershipTransfer-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-CRYPTO-001",
+      "control": "ENF-BLK-002",
+      "test": "CON-CRYPTO-001",
+      "evidence": "EncryptionDoesNotProveIsolation-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-CRYPTO-002",
+      "control": "ENF-BLK-003",
+      "test": "CON-CRYPTO-002",
+      "evidence": "DecryptionDoesNotGrantUse-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-CRYPTO-003",
+      "control": "ENF-BLK-008",
+      "test": "CON-CRYPTO-003",
+      "evidence": "EpochFencingOverridesTTL-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-OBS-001",
+      "control": "ENF-BLK-010",
+      "test": "CON-OBS-001",
+      "evidence": "SignalIsNotDecision-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-OBS-002",
+      "control": "ENF-OBS-MISSING-TELEMETRY",
+      "test": "CON-OBS-002",
+      "evidence": "MissingTelemetryCreatesUncertainty-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-OBS-003",
+      "control": "ENF-OBS-TIME-SEPARATION",
+      "test": "CON-OBS-003",
+      "evidence": "ObservationAndIngestionTimeDiffer-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-EVO-001",
+      "control": "ENF-BLK-011",
+      "test": "CON-EVO-001",
+      "evidence": "PublicationIsNotActivation-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-EVO-002",
+      "control": "ENF-BLK-011",
+      "test": "CON-EVO-002",
+      "evidence": "CompatibilityPreservesSemantics-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-EVO-003",
+      "control": "ENF-BLK-011",
+      "test": "CON-EVO-003",
+      "evidence": "SoftwareRollbackIsNotSystemRollback-evidence",
+      "work_package": "FR0-WP-005"
+    },
+    {
+      "invariant": "INV-RETRY-001",
+      "control": "ENF-BLK-006",
+      "test": "CON-RETRY-001",
+      "evidence": "IdempotentOperationIdentity-evidence",
+      "work_package": "FR0-WP-005"
+    }
+  ]
+}

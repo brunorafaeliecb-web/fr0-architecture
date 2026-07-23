@@ -1,0 +1,180 @@
+{
+  "registry_version": 1,
+  "architecture_baseline_id": "AB-FR0-001",
+  "status": "DRAFT",
+  "registry_id": "ENFORCEMENT-REGISTRY",
+  "controls": [
+    {
+      "control_id": "ENF-BLK-001",
+      "canonical_name": "CrossContextWriteProtection",
+      "invariants": [
+        "INV-OWN-001",
+        "INV-OWN-002"
+      ],
+      "semantic_owner": "CTX-GOV",
+      "priority": "BLOCKER",
+      "status": "DEFINED",
+      "failure_behavior": "REJECT"
+    },
+    {
+      "control_id": "ENF-BLK-002",
+      "canonical_name": "TenantBoundaryValidation",
+      "invariants": [
+        "INV-TEN-001",
+        "INV-TEN-002",
+        "INV-TEN-003",
+        "INV-CRYPTO-001"
+      ],
+      "semantic_owner": "CTX-ORG",
+      "priority": "BLOCKER",
+      "status": "DEFINED",
+      "failure_behavior": "REJECT"
+    },
+    {
+      "control_id": "ENF-BLK-003",
+      "canonical_name": "EffectiveAuthorityComposition",
+      "invariants": [
+        "INV-AUTH-001",
+        "INV-AUTH-002",
+        "INV-AUTH-003",
+        "INV-EXEC-001",
+        "INV-CRYPTO-002"
+      ],
+      "semantic_owner": "CTX-GOV",
+      "priority": "BLOCKER",
+      "status": "DEFINED",
+      "failure_behavior": "DENY_OR_DEFER"
+    },
+    {
+      "control_id": "ENF-BLK-004",
+      "canonical_name": "DomainTransitionGuard",
+      "invariants": [
+        "INV-STATE-001",
+        "INV-STATE-002",
+        "INV-STATE-003"
+      ],
+      "semantic_owner": "CTX-GOV",
+      "priority": "BLOCKER",
+      "status": "DEFINED",
+      "failure_behavior": "REJECT_AND_PRESERVE_STATE"
+    },
+    {
+      "control_id": "ENF-BLK-005",
+      "canonical_name": "ActorChainPropagation",
+      "invariants": [
+        "INV-ID-001",
+        "INV-ID-002"
+      ],
+      "semantic_owner": "CTX-IAM",
+      "priority": "BLOCKER",
+      "status": "DEFINED",
+      "failure_behavior": "REJECT_MATERIAL_OPERATION"
+    },
+    {
+      "control_id": "ENF-BLK-006",
+      "canonical_name": "IdempotentOperationIdentity",
+      "invariants": [],
+      "semantic_owner": "CTX-OPERATION",
+      "priority": "BLOCKER",
+      "status": "DEFINED",
+      "failure_behavior": "RETURN_EXISTING_OR_REJECT_CONFLICT"
+    },
+    {
+      "control_id": "ENF-BLK-007",
+      "canonical_name": "SingleRetryOwner",
+      "invariants": [
+        "INV-RETRY-001",
+        "INV-RETRY-003"
+      ],
+      "semantic_owner": "CTX-OPERATION",
+      "priority": "BLOCKER",
+      "status": "DEFINED",
+      "failure_behavior": "STOP_UNAUTHORIZED_RETRY"
+    },
+    {
+      "control_id": "ENF-BLK-008",
+      "canonical_name": "OwnershipEpochFencing",
+      "invariants": [
+        "INV-EXEC-003",
+        "INV-ID-003",
+        "INV-CRYPTO-003"
+      ],
+      "semantic_owner": "CTX-GOV",
+      "priority": "BLOCKER",
+      "status": "DEFINED",
+      "failure_behavior": "REJECT_STALE_AUTHORITY"
+    },
+    {
+      "control_id": "ENF-BLK-009",
+      "canonical_name": "RevocationFirstReconnect",
+      "invariants": [
+        "INV-CONV-001",
+        "INV-CONV-002",
+        "INV-CONV-003"
+      ],
+      "semantic_owner": "CTX-SYNC",
+      "priority": "BLOCKER",
+      "status": "DEFINED",
+      "failure_behavior": "HOLD_PENDING_WORK"
+    },
+    {
+      "control_id": "ENF-BLK-010",
+      "canonical_name": "UnknownOutcomeReconciliation",
+      "invariants": [
+        "INV-EXEC-002",
+        "INV-RETRY-002",
+        "INV-OBS-001"
+      ],
+      "semantic_owner": "CTX-OPERATION",
+      "priority": "BLOCKER",
+      "status": "DEFINED",
+      "failure_behavior": "STOP_RETRY_AND_OPEN_RECONCILIATION"
+    },
+    {
+      "control_id": "ENF-BLK-011",
+      "canonical_name": "VersionCompatibilityGate",
+      "invariants": [
+        "INV-EVO-001",
+        "INV-EVO-002",
+        "INV-EVO-003"
+      ],
+      "semantic_owner": "CTX-EVOLUTION",
+      "priority": "BLOCKER",
+      "status": "DEFINED",
+      "failure_behavior": "BLOCK_ACTIVATION"
+    },
+    {
+      "control_id": "ENF-BLK-012",
+      "canonical_name": "ProjectionNonAuthorityMarker",
+      "invariants": [
+        "INV-OWN-003"
+      ],
+      "semantic_owner": "CTX-GOV",
+      "priority": "BLOCKER",
+      "status": "DEFINED",
+      "failure_behavior": "REJECT_AUTHORITY_USE"
+    },
+    {
+      "control_id": "ENF-OBS-MISSING-TELEMETRY",
+      "canonical_name": "MissingTelemetryUncertaintyControl",
+      "invariants": [
+        "INV-OBS-002"
+      ],
+      "semantic_owner": "CTX-OPS",
+      "priority": "REQUIRED_BEFORE_PRODUCTION",
+      "status": "DEFINED",
+      "failure_behavior": "MARK_UNCERTAIN"
+    },
+    {
+      "control_id": "ENF-OBS-TIME-SEPARATION",
+      "canonical_name": "ObservationTimeSeparationControl",
+      "invariants": [
+        "INV-OBS-003"
+      ],
+      "semantic_owner": "CTX-OPS",
+      "priority": "REQUIRED_BEFORE_PRODUCTION",
+      "status": "DEFINED",
+      "failure_behavior": "REJECT_AMBIGUOUS_TIME"
+    }
+  ]
+}

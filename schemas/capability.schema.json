@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "registry_id",
+    "registry_version",
+    "architecture_baseline_id",
+    "status",
+    "capabilities"
+  ],
+  "properties": {
+    "registry_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "registry_version": {
+      "type": "integer",
+      "const": 1
+    },
+    "architecture_baseline_id": {
+      "type": "string",
+      "const": "AB-FR0-001"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "APPROVED"
+      ]
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "capability_id",
+          "semantic_owner",
+          "priority"
+        ],
+        "properties": {
+          "capability_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "semantic_owner": {
+            "type": "string",
+            "minLength": 1
+          },
+          "priority": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

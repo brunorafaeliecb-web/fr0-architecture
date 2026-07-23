@@ -1,0 +1,168 @@
+{
+  "registry_version": 1,
+  "architecture_baseline_id": "AB-FR0-001",
+  "status": "DRAFT",
+  "registry_id": "CONTEXT-REGISTRY",
+  "contexts": [
+    {
+      "context_id": "CTX-ORG",
+      "canonical_name": "Organization",
+      "purpose": "Govern the Organization bounded context."
+    },
+    {
+      "context_id": "CTX-IAM",
+      "canonical_name": "IdentityAndAccess",
+      "purpose": "Govern the IdentityAndAccess bounded context."
+    },
+    {
+      "context_id": "CTX-DEV",
+      "canonical_name": "DeveloperExperience",
+      "purpose": "Govern the DeveloperExperience bounded context."
+    },
+    {
+      "context_id": "CTX-AGENT",
+      "canonical_name": "Agent",
+      "purpose": "Govern the Agent bounded context."
+    },
+    {
+      "context_id": "CTX-TRAIN",
+      "canonical_name": "Training",
+      "purpose": "Govern the Training bounded context."
+    },
+    {
+      "context_id": "CTX-SESSION",
+      "canonical_name": "Session",
+      "purpose": "Govern the Session bounded context."
+    },
+    {
+      "context_id": "CTX-OPERATION",
+      "canonical_name": "Operation",
+      "purpose": "Govern the Operation bounded context."
+    },
+    {
+      "context_id": "CTX-SYNC",
+      "canonical_name": "Synchronization",
+      "purpose": "Govern the Synchronization bounded context."
+    },
+    {
+      "context_id": "CTX-AI",
+      "canonical_name": "ArtificialIntelligence",
+      "purpose": "Govern the ArtificialIntelligence bounded context."
+    },
+    {
+      "context_id": "CTX-RIGHTS",
+      "canonical_name": "Rights",
+      "purpose": "Govern the Rights bounded context."
+    },
+    {
+      "context_id": "CTX-VOICE",
+      "canonical_name": "Voice",
+      "purpose": "Govern the Voice bounded context."
+    },
+    {
+      "context_id": "CTX-TEL",
+      "canonical_name": "Telephony",
+      "purpose": "Govern the Telephony bounded context."
+    },
+    {
+      "context_id": "CTX-HUMAN",
+      "canonical_name": "HumanHandoff",
+      "purpose": "Govern the HumanHandoff bounded context."
+    },
+    {
+      "context_id": "CTX-NOTIFY",
+      "canonical_name": "Notification",
+      "purpose": "Govern the Notification bounded context."
+    },
+    {
+      "context_id": "CTX-COMMERCIAL",
+      "canonical_name": "Commercial",
+      "purpose": "Govern the Commercial bounded context."
+    },
+    {
+      "context_id": "CTX-ADS",
+      "canonical_name": "AgentAds",
+      "purpose": "Govern the AgentAds bounded context."
+    },
+    {
+      "context_id": "CTX-GOV",
+      "canonical_name": "Governance",
+      "purpose": "Govern the Governance bounded context."
+    },
+    {
+      "context_id": "CTX-JURISDICTION",
+      "canonical_name": "Jurisdiction",
+      "purpose": "Govern the Jurisdiction bounded context."
+    },
+    {
+      "context_id": "CTX-INTEGRITY",
+      "canonical_name": "Integrity",
+      "purpose": "Govern the Integrity bounded context."
+    },
+    {
+      "context_id": "CTX-SUPPLY",
+      "canonical_name": "SupplyChain",
+      "purpose": "Govern the SupplyChain bounded context."
+    },
+    {
+      "context_id": "CTX-CHANGE",
+      "canonical_name": "Change",
+      "purpose": "Govern the Change bounded context."
+    },
+    {
+      "context_id": "CTX-CAPACITY",
+      "canonical_name": "Capacity",
+      "purpose": "Govern the Capacity bounded context."
+    },
+    {
+      "context_id": "CTX-BACKUP",
+      "canonical_name": "Backup",
+      "purpose": "Govern the Backup bounded context."
+    },
+    {
+      "context_id": "CTX-EVIDENCE",
+      "canonical_name": "Evidence",
+      "purpose": "Govern the Evidence bounded context."
+    },
+    {
+      "context_id": "CTX-CATALOG",
+      "canonical_name": "Catalog",
+      "purpose": "Govern the Catalog bounded context."
+    },
+    {
+      "context_id": "CTX-LIFECYCLE",
+      "canonical_name": "Lifecycle",
+      "purpose": "Govern the Lifecycle bounded context."
+    },
+    {
+      "context_id": "CTX-INTEROP",
+      "canonical_name": "Interoperability",
+      "purpose": "Govern the Interoperability bounded context."
+    },
+    {
+      "context_id": "CTX-EVOLUTION",
+      "canonical_name": "Evolution",
+      "purpose": "Govern the Evolution bounded context."
+    },
+    {
+      "context_id": "CTX-EXPERIMENT",
+      "canonical_name": "Experiment",
+      "purpose": "Govern the Experiment bounded context."
+    },
+    {
+      "context_id": "CTX-QUALITY",
+      "canonical_name": "Quality",
+      "purpose": "Govern the Quality bounded context."
+    },
+    {
+      "context_id": "CTX-OPS",
+      "canonical_name": "Operations",
+      "purpose": "Govern the Operations bounded context."
+    },
+    {
+      "context_id": "CTX-EDGE",
+      "canonical_name": "Edge",
+      "purpose": "Govern the Edge bounded context."
+    }
+  ]
+}

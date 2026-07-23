@@ -1,0 +1,72 @@
+{
+  "registry_version": 1,
+  "architecture_baseline_id": "AB-FR0-001",
+  "status": "DRAFT",
+  "registry_id": "FR0-WORK-PACKAGE-CATALOG",
+  "work_packages": [
+    {
+      "work_package_id": "FR0-WP-001",
+      "canonical_name": "Normative Registry Schemas",
+      "semantic_owner": "Rafael",
+      "implementation_owner": "Rafael",
+      "operation_owner": "Rafael",
+      "acceptance_authority": "Rafael"
+    },
+    {
+      "work_package_id": "FR0-WP-002",
+      "canonical_name": "Context and Ownership Baseline",
+      "semantic_owner": "Rafael",
+      "implementation_owner": "Rafael",
+      "operation_owner": "Rafael",
+      "acceptance_authority": "Rafael"
+    },
+    {
+      "work_package_id": "FR0-WP-003",
+      "canonical_name": "Foundation Type Library",
+      "semantic_owner": "Rafael",
+      "implementation_owner": "Rafael",
+      "operation_owner": "Rafael",
+      "acceptance_authority": "Rafael"
+    },
+    {
+      "work_package_id": "FR0-WP-004",
+      "canonical_name": "Canonical Contract Envelope",
+      "semantic_owner": "Rafael",
+      "implementation_owner": "Rafael",
+      "operation_owner": "Rafael",
+      "acceptance_authority": "Rafael"
+    },
+    {
+      "work_package_id": "FR0-WP-005",
+      "canonical_name": "Architecture Test Engine",
+      "semantic_owner": "Rafael",
+      "implementation_owner": "Rafael",
+      "operation_owner": "Rafael",
+      "acceptance_authority": "Rafael"
+    },
+    {
+      "work_package_id": "FR0-WP-006",
+      "canonical_name": "CI Architecture Gate",
+      "semantic_owner": "Rafael",
+      "implementation_owner": "Rafael",
+      "operation_owner": "Rafael",
+      "acceptance_authority": "Rafael"
+    },
+    {
+      "work_package_id": "FR0-WP-007",
+      "canonical_name": "Architecture Baseline Workflow",
+      "semantic_owner": "Rafael",
+      "implementation_owner": "Rafael",
+      "operation_owner": "Rafael",
+      "acceptance_authority": "Rafael"
+    },
+    {
+      "work_package_id": "FR0-WP-008",
+      "canonical_name": "Release Manifest Generator",
+      "semantic_owner": "Rafael",
+      "implementation_owner": "Rafael",
+      "operation_owner": "Rafael",
+      "acceptance_authority": "Rafael"
+    }
+  ]
+}

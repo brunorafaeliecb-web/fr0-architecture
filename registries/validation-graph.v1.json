@@ -1,0 +1,68 @@
+{
+  "registry_version": 1,
+  "architecture_baseline_id": "AB-FR0-001",
+  "status": "DRAFT",
+  "registry_id": "ARCH-VALIDATION-GRAPH",
+  "stages": [
+    {
+      "stage_id": "V0",
+      "canonical_name": "ArtifactDiscovery",
+      "required_for_m1_g2": true
+    },
+    {
+      "stage_id": "V1",
+      "canonical_name": "SchemaValidation",
+      "required_for_m1_g2": true
+    },
+    {
+      "stage_id": "V2",
+      "canonical_name": "IdentityAndUniqueness",
+      "required_for_m1_g2": true
+    },
+    {
+      "stage_id": "V3",
+      "canonical_name": "ReferenceIntegrity",
+      "required_for_m1_g2": true
+    },
+    {
+      "stage_id": "V4",
+      "canonical_name": "OwnershipConsistency",
+      "required_for_m1_g2": true
+    },
+    {
+      "stage_id": "V5",
+      "canonical_name": "DependencyConsistency",
+      "required_for_m1_g2": true
+    },
+    {
+      "stage_id": "V6",
+      "canonical_name": "ContractCompatibility",
+      "required_for_m1_g2": true
+    },
+    {
+      "stage_id": "V7",
+      "canonical_name": "InvariantCoverage",
+      "required_for_m1_g2": true
+    },
+    {
+      "stage_id": "V8",
+      "canonical_name": "ExceptionValidation",
+      "required_for_m1_g2": true
+    },
+    {
+      "stage_id": "V9",
+      "canonical_name": "ImplementationConformance",
+      "required_for_m1_g2": false
+    },
+    {
+      "stage_id": "V10",
+      "canonical_name": "BaselineEligibility",
+      "required_for_m1_g2": false
+    },
+    {
+      "stage_id": "V11",
+      "canonical_name": "ReleaseEligibility",
+      "required_for_m1_g2": false
+    }
+  ]
+}

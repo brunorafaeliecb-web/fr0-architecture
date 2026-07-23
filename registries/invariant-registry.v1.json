@@ -1,0 +1,602 @@
+{
+  "registry_version": 1,
+  "architecture_baseline_id": "AB-FR0-001",
+  "status": "DRAFT",
+  "registry_id": "INVARIANT-REGISTRY",
+  "invariants": [
+    {
+      "invariant_id": "INV-OWN-001",
+      "canonical_name": "SingleAuthoritativeOwner",
+      "risk_family": "OWNERSHIP",
+      "normative_rule": "SingleAuthoritativeOwner",
+      "semantic_owner": "CTX-GOV",
+      "priority": "BLOCKER",
+      "enforcement_references": [
+        "ENF-BLK-001"
+      ],
+      "verification_tests": [
+        "CON-OWN-001"
+      ],
+      "evidence_requirements": [
+        "SingleAuthoritativeOwner-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-OWN-002",
+      "canonical_name": "CoordinationDoesNotTransferOwnership",
+      "risk_family": "OWNERSHIP",
+      "normative_rule": "CoordinationDoesNotTransferOwnership",
+      "semantic_owner": "CTX-GOV",
+      "priority": "BLOCKER",
+      "enforcement_references": [
+        "ENF-BLK-001"
+      ],
+      "verification_tests": [
+        "CON-OWN-002"
+      ],
+      "evidence_requirements": [
+        "CoordinationDoesNotTransferOwnership-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-OWN-003",
+      "canonical_name": "ProjectionIsNotAuthority",
+      "risk_family": "OWNERSHIP",
+      "normative_rule": "ProjectionIsNotAuthority",
+      "semantic_owner": "CTX-GOV",
+      "priority": "BLOCKER",
+      "enforcement_references": [
+        "ENF-BLK-012"
+      ],
+      "verification_tests": [
+        "CON-OWN-003"
+      ],
+      "evidence_requirements": [
+        "ProjectionIsNotAuthority-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-AUTH-001",
+      "canonical_name": "EffectiveAuthorityIsIntersection",
+      "risk_family": "AUTHORITY",
+      "normative_rule": "EffectiveAuthorityIsIntersection",
+      "semantic_owner": "CTX-GOV",
+      "priority": "BLOCKER",
+      "enforcement_references": [
+        "ENF-BLK-003"
+      ],
+      "verification_tests": [
+        "CON-AUTH-001"
+      ],
+      "evidence_requirements": [
+        "EffectiveAuthorityIsIntersection-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-AUTH-002",
+      "canonical_name": "AvailabilityDoesNotGrantAuthority",
+      "risk_family": "AUTHORITY",
+      "normative_rule": "AvailabilityDoesNotGrantAuthority",
+      "semantic_owner": "CTX-GOV",
+      "priority": "BLOCKER",
+      "enforcement_references": [
+        "ENF-BLK-003"
+      ],
+      "verification_tests": [
+        "CON-AUTH-002"
+      ],
+      "evidence_requirements": [
+        "AvailabilityDoesNotGrantAuthority-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-AUTH-003",
+      "canonical_name": "EmergencyAuthorityIsBounded",
+      "risk_family": "AUTHORITY",
+      "normative_rule": "EmergencyAuthorityIsBounded",
+      "semantic_owner": "CTX-GOV",
+      "priority": "BLOCKER",
+      "enforcement_references": [
+        "ENF-BLK-003"
+      ],
+      "verification_tests": [
+        "CON-AUTH-003"
+      ],
+      "evidence_requirements": [
+        "EmergencyAuthorityIsBounded-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-STATE-001",
+      "canonical_name": "StateCategoriesRemainDistinct",
+      "risk_family": "STATE",
+      "normative_rule": "StateCategoriesRemainDistinct",
+      "semantic_owner": "CTX-GOV",
+      "priority": "BLOCKER",
+      "enforcement_references": [
+        "ENF-BLK-004"
+      ],
+      "verification_tests": [
+        "CON-STATE-001"
+      ],
+      "evidence_requirements": [
+        "StateCategoriesRemainDistinct-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-STATE-002",
+      "canonical_name": "OnlyDomainOwnerTransitionsState",
+      "risk_family": "STATE",
+      "normative_rule": "OnlyDomainOwnerTransitionsState",
+      "semantic_owner": "CTX-GOV",
+      "priority": "BLOCKER",
+      "enforcement_references": [
+        "ENF-BLK-004"
+      ],
+      "verification_tests": [
+        "CON-STATE-002"
+      ],
+      "evidence_requirements": [
+        "OnlyDomainOwnerTransitionsState-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-STATE-003",
+      "canonical_name": "TerminalStateResistsStaleResurrection",
+      "risk_family": "STATE",
+      "normative_rule": "TerminalStateResistsStaleResurrection",
+      "semantic_owner": "CTX-GOV",
+      "priority": "BLOCKER",
+      "enforcement_references": [
+        "ENF-BLK-004"
+      ],
+      "verification_tests": [
+        "CON-STATE-003"
+      ],
+      "evidence_requirements": [
+        "TerminalStateResistsStaleResurrection-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-EXEC-001",
+      "canonical_name": "AuthorizationAndExecutionStagesRemainDistinct",
+      "risk_family": "EXECUTION",
+      "normative_rule": "AuthorizationAndExecutionStagesRemainDistinct",
+      "semantic_owner": "CTX-OPERATION",
+      "priority": "BLOCKER",
+      "enforcement_references": [
+        "ENF-BLK-003"
+      ],
+      "verification_tests": [
+        "CON-EXEC-001"
+      ],
+      "evidence_requirements": [
+        "AuthorizationAndExecutionStagesRemainDistinct-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-EXEC-002",
+      "canonical_name": "ToolSuccessDoesNotProveBusinessSuccess",
+      "risk_family": "EXECUTION",
+      "normative_rule": "ToolSuccessDoesNotProveBusinessSuccess",
+      "semantic_owner": "CTX-OPERATION",
+      "priority": "BLOCKER",
+      "enforcement_references": [
+        "ENF-BLK-010"
+      ],
+      "verification_tests": [
+        "CON-EXEC-002"
+      ],
+      "evidence_requirements": [
+        "ToolSuccessDoesNotProveBusinessSuccess-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-EXEC-003",
+      "canonical_name": "PlacementDoesNotGrantAuthority",
+      "risk_family": "EXECUTION",
+      "normative_rule": "PlacementDoesNotGrantAuthority",
+      "semantic_owner": "CTX-OPERATION",
+      "priority": "BLOCKER",
+      "enforcement_references": [
+        "ENF-BLK-008"
+      ],
+      "verification_tests": [
+        "CON-EXEC-003"
+      ],
+      "evidence_requirements": [
+        "PlacementDoesNotGrantAuthority-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-RETRY-001",
+      "canonical_name": "OneOperationOneRetryOwner",
+      "risk_family": "RETRY",
+      "normative_rule": "OneOperationOneRetryOwner",
+      "semantic_owner": "CTX-OPERATION",
+      "priority": "BLOCKER",
+      "enforcement_references": [
+        "ENF-BLK-007"
+      ],
+      "verification_tests": [
+        "CON-RETRY-001"
+      ],
+      "evidence_requirements": [
+        "OneOperationOneRetryOwner-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-RETRY-002",
+      "canonical_name": "UnknownOutcomeRequiresReconciliation",
+      "risk_family": "RETRY",
+      "normative_rule": "UnknownOutcomeRequiresReconciliation",
+      "semantic_owner": "CTX-OPERATION",
+      "priority": "BLOCKER",
+      "enforcement_references": [
+        "ENF-BLK-010"
+      ],
+      "verification_tests": [
+        "CON-RETRY-002"
+      ],
+      "evidence_requirements": [
+        "UnknownOutcomeRequiresReconciliation-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-RETRY-003",
+      "canonical_name": "RetryBudgetIsEndToEnd",
+      "risk_family": "RETRY",
+      "normative_rule": "RetryBudgetIsEndToEnd",
+      "semantic_owner": "CTX-OPERATION",
+      "priority": "BLOCKER",
+      "enforcement_references": [
+        "ENF-BLK-007"
+      ],
+      "verification_tests": [
+        "CON-RETRY-003"
+      ],
+      "evidence_requirements": [
+        "RetryBudgetIsEndToEnd-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-CONV-001",
+      "canonical_name": "TransportIsNotConvergence",
+      "risk_family": "CONVERGENCE",
+      "normative_rule": "TransportIsNotConvergence",
+      "semantic_owner": "CTX-SYNC",
+      "priority": "BLOCKER",
+      "enforcement_references": [
+        "ENF-BLK-009"
+      ],
+      "verification_tests": [
+        "CON-CONV-001"
+      ],
+      "evidence_requirements": [
+        "TransportIsNotConvergence-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-CONV-002",
+      "canonical_name": "StateEqualityDoesNotProveConvergence",
+      "risk_family": "CONVERGENCE",
+      "normative_rule": "StateEqualityDoesNotProveConvergence",
+      "semantic_owner": "CTX-SYNC",
+      "priority": "BLOCKER",
+      "enforcement_references": [
+        "ENF-BLK-009"
+      ],
+      "verification_tests": [
+        "CON-CONV-002"
+      ],
+      "evidence_requirements": [
+        "StateEqualityDoesNotProveConvergence-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-CONV-003",
+      "canonical_name": "RevocationFirstReconnect",
+      "risk_family": "CONVERGENCE",
+      "normative_rule": "RevocationFirstReconnect",
+      "semantic_owner": "CTX-SYNC",
+      "priority": "BLOCKER",
+      "enforcement_references": [
+        "ENF-BLK-009"
+      ],
+      "verification_tests": [
+        "CON-CONV-003"
+      ],
+      "evidence_requirements": [
+        "RevocationFirstReconnect-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-ID-001",
+      "canonical_name": "CredentialValidityIsNotAuthority",
+      "risk_family": "IDENTITY",
+      "normative_rule": "CredentialValidityIsNotAuthority",
+      "semantic_owner": "CTX-IAM",
+      "priority": "BLOCKER",
+      "enforcement_references": [
+        "ENF-BLK-005"
+      ],
+      "verification_tests": [
+        "CON-ID-001"
+      ],
+      "evidence_requirements": [
+        "CredentialValidityIsNotAuthority-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-ID-002",
+      "canonical_name": "CompleteActorChainIsPreserved",
+      "risk_family": "IDENTITY",
+      "normative_rule": "CompleteActorChainIsPreserved",
+      "semantic_owner": "CTX-IAM",
+      "priority": "BLOCKER",
+      "enforcement_references": [
+        "ENF-BLK-005"
+      ],
+      "verification_tests": [
+        "CON-ID-002"
+      ],
+      "evidence_requirements": [
+        "CompleteActorChainIsPreserved-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-ID-003",
+      "canonical_name": "DerivedCredentialsDoNotExpandAuthority",
+      "risk_family": "IDENTITY",
+      "normative_rule": "DerivedCredentialsDoNotExpandAuthority",
+      "semantic_owner": "CTX-IAM",
+      "priority": "BLOCKER",
+      "enforcement_references": [
+        "ENF-BLK-008"
+      ],
+      "verification_tests": [
+        "CON-ID-003"
+      ],
+      "evidence_requirements": [
+        "DerivedCredentialsDoNotExpandAuthority-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-TEN-001",
+      "canonical_name": "TenantMatchIsInsufficient",
+      "risk_family": "TENANCY",
+      "normative_rule": "TenantMatchIsInsufficient",
+      "semantic_owner": "CTX-ORG",
+      "priority": "BLOCKER",
+      "enforcement_references": [
+        "ENF-BLK-002"
+      ],
+      "verification_tests": [
+        "CON-TEN-001"
+      ],
+      "evidence_requirements": [
+        "TenantMatchIsInsufficient-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-TEN-002",
+      "canonical_name": "TenantScopeCannotComeOnlyFromPayload",
+      "risk_family": "TENANCY",
+      "normative_rule": "TenantScopeCannotComeOnlyFromPayload",
+      "semantic_owner": "CTX-ORG",
+      "priority": "BLOCKER",
+      "enforcement_references": [
+        "ENF-BLK-002"
+      ],
+      "verification_tests": [
+        "CON-TEN-002"
+      ],
+      "evidence_requirements": [
+        "TenantScopeCannotComeOnlyFromPayload-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-TEN-003",
+      "canonical_name": "CrossTenantAccessIsNotOwnershipTransfer",
+      "risk_family": "TENANCY",
+      "normative_rule": "CrossTenantAccessIsNotOwnershipTransfer",
+      "semantic_owner": "CTX-ORG",
+      "priority": "BLOCKER",
+      "enforcement_references": [
+        "ENF-BLK-002"
+      ],
+      "verification_tests": [
+        "CON-TEN-003"
+      ],
+      "evidence_requirements": [
+        "CrossTenantAccessIsNotOwnershipTransfer-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-CRYPTO-001",
+      "canonical_name": "EncryptionDoesNotProveIsolation",
+      "risk_family": "CRYPTOGRAPHY",
+      "normative_rule": "EncryptionDoesNotProveIsolation",
+      "semantic_owner": "CTX-INTEGRITY",
+      "priority": "BLOCKER",
+      "enforcement_references": [
+        "ENF-BLK-002"
+      ],
+      "verification_tests": [
+        "CON-CRYPTO-001"
+      ],
+      "evidence_requirements": [
+        "EncryptionDoesNotProveIsolation-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-CRYPTO-002",
+      "canonical_name": "DecryptionDoesNotGrantUse",
+      "risk_family": "CRYPTOGRAPHY",
+      "normative_rule": "DecryptionDoesNotGrantUse",
+      "semantic_owner": "CTX-INTEGRITY",
+      "priority": "BLOCKER",
+      "enforcement_references": [
+        "ENF-BLK-003"
+      ],
+      "verification_tests": [
+        "CON-CRYPTO-002"
+      ],
+      "evidence_requirements": [
+        "DecryptionDoesNotGrantUse-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-CRYPTO-003",
+      "canonical_name": "EpochFencingOverridesTTL",
+      "risk_family": "CRYPTOGRAPHY",
+      "normative_rule": "EpochFencingOverridesTTL",
+      "semantic_owner": "CTX-INTEGRITY",
+      "priority": "BLOCKER",
+      "enforcement_references": [
+        "ENF-BLK-008"
+      ],
+      "verification_tests": [
+        "CON-CRYPTO-003"
+      ],
+      "evidence_requirements": [
+        "EpochFencingOverridesTTL-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-OBS-001",
+      "canonical_name": "SignalIsNotDecision",
+      "risk_family": "OBSERVABILITY",
+      "normative_rule": "SignalIsNotDecision",
+      "semantic_owner": "CTX-OPS",
+      "priority": "BLOCKER",
+      "enforcement_references": [
+        "ENF-BLK-010"
+      ],
+      "verification_tests": [
+        "CON-OBS-001"
+      ],
+      "evidence_requirements": [
+        "SignalIsNotDecision-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-OBS-002",
+      "canonical_name": "MissingTelemetryCreatesUncertainty",
+      "risk_family": "OBSERVABILITY",
+      "normative_rule": "MissingTelemetryCreatesUncertainty",
+      "semantic_owner": "CTX-OPS",
+      "priority": "REQUIRED_BEFORE_PRODUCTION",
+      "enforcement_references": [
+        "ENF-OBS-MISSING-TELEMETRY"
+      ],
+      "verification_tests": [
+        "CON-OBS-002"
+      ],
+      "evidence_requirements": [
+        "MissingTelemetryCreatesUncertainty-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-OBS-003",
+      "canonical_name": "ObservationAndIngestionTimeDiffer",
+      "risk_family": "OBSERVABILITY",
+      "normative_rule": "ObservationAndIngestionTimeDiffer",
+      "semantic_owner": "CTX-OPS",
+      "priority": "REQUIRED_BEFORE_PRODUCTION",
+      "enforcement_references": [
+        "ENF-OBS-TIME-SEPARATION"
+      ],
+      "verification_tests": [
+        "CON-OBS-003"
+      ],
+      "evidence_requirements": [
+        "ObservationAndIngestionTimeDiffer-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-EVO-001",
+      "canonical_name": "PublicationIsNotActivation",
+      "risk_family": "EVOLUTION",
+      "normative_rule": "PublicationIsNotActivation",
+      "semantic_owner": "CTX-EVOLUTION",
+      "priority": "BLOCKER",
+      "enforcement_references": [
+        "ENF-BLK-011"
+      ],
+      "verification_tests": [
+        "CON-EVO-001"
+      ],
+      "evidence_requirements": [
+        "PublicationIsNotActivation-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-EVO-002",
+      "canonical_name": "CompatibilityPreservesSemantics",
+      "risk_family": "EVOLUTION",
+      "normative_rule": "CompatibilityPreservesSemantics",
+      "semantic_owner": "CTX-EVOLUTION",
+      "priority": "BLOCKER",
+      "enforcement_references": [
+        "ENF-BLK-011"
+      ],
+      "verification_tests": [
+        "CON-EVO-002"
+      ],
+      "evidence_requirements": [
+        "CompatibilityPreservesSemantics-evidence"
+      ],
+      "status": "APPROVED"
+    },
+    {
+      "invariant_id": "INV-EVO-003",
+      "canonical_name": "SoftwareRollbackIsNotSystemRollback",
+      "risk_family": "EVOLUTION",
+      "normative_rule": "SoftwareRollbackIsNotSystemRollback",
+      "semantic_owner": "CTX-EVOLUTION",
+      "priority": "BLOCKER",
+      "enforcement_references": [
+        "ENF-BLK-011"
+      ],
+      "verification_tests": [
+        "CON-EVO-003"
+      ],
+      "evidence_requirements": [
+        "SoftwareRollbackIsNotSystemRollback-evidence"
+      ],
+      "status": "APPROVED"
+    }
+  ]
+}

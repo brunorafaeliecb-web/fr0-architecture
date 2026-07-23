@@ -1,0 +1,435 @@
+{
+  "registry_version": 1,
+  "architecture_baseline_id": "AB-FR0-001",
+  "status": "DRAFT",
+  "registry_id": "ARCHITECTURE-TEST-CATALOG",
+  "tests": [
+    {
+      "test_id": "CON-OWN-001",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-OWN-001",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-OWN-002",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-OWN-002",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-OWN-003",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-OWN-003",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-AUTH-001",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-AUTH-001",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-AUTH-002",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-AUTH-002",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-AUTH-003",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-AUTH-003",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-STATE-001",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-STATE-001",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-STATE-002",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-STATE-002",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-STATE-003",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-STATE-003",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-EXEC-001",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-EXEC-001",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-EXEC-002",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-EXEC-002",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-EXEC-003",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-EXEC-003",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-RETRY-001",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-RETRY-001",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-RETRY-002",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-RETRY-002",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-RETRY-003",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-RETRY-003",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-CONV-001",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-CONV-001",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-CONV-002",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-CONV-002",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-CONV-003",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-CONV-003",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-ID-001",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-ID-001",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-ID-002",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-ID-002",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-ID-003",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-ID-003",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-TEN-001",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-TEN-001",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-TEN-002",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-TEN-002",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-TEN-003",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-TEN-003",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-CRYPTO-001",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-CRYPTO-001",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-CRYPTO-002",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-CRYPTO-002",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-CRYPTO-003",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-CRYPTO-003",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-OBS-001",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-OBS-001",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-OBS-002",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-OBS-002",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-OBS-003",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-OBS-003",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-EVO-001",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-EVO-001",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-EVO-002",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-EVO-002",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "CON-EVO-003",
+      "test_group": "ARCH-INVARIANT",
+      "target_type": "INVARIANT",
+      "target_id": "INV-EVO-003",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "TEST-ENF-BLK-001-POS",
+      "test_group": "ARCH-CONTROL",
+      "target_type": "CONTROL",
+      "target_id": "ENF-BLK-001",
+      "polarity": "POSITIVE"
+    },
+    {
+      "test_id": "TEST-ENF-BLK-001-NEG",
+      "test_group": "ARCH-CONTROL",
+      "target_type": "CONTROL",
+      "target_id": "ENF-BLK-001",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "TEST-ENF-BLK-002-POS",
+      "test_group": "ARCH-CONTROL",
+      "target_type": "CONTROL",
+      "target_id": "ENF-BLK-002",
+      "polarity": "POSITIVE"
+    },
+    {
+      "test_id": "TEST-ENF-BLK-002-NEG",
+      "test_group": "ARCH-CONTROL",
+      "target_type": "CONTROL",
+      "target_id": "ENF-BLK-002",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "TEST-ENF-BLK-003-POS",
+      "test_group": "ARCH-CONTROL",
+      "target_type": "CONTROL",
+      "target_id": "ENF-BLK-003",
+      "polarity": "POSITIVE"
+    },
+    {
+      "test_id": "TEST-ENF-BLK-003-NEG",
+      "test_group": "ARCH-CONTROL",
+      "target_type": "CONTROL",
+      "target_id": "ENF-BLK-003",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "TEST-ENF-BLK-004-POS",
+      "test_group": "ARCH-CONTROL",
+      "target_type": "CONTROL",
+      "target_id": "ENF-BLK-004",
+      "polarity": "POSITIVE"
+    },
+    {
+      "test_id": "TEST-ENF-BLK-004-NEG",
+      "test_group": "ARCH-CONTROL",
+      "target_type": "CONTROL",
+      "target_id": "ENF-BLK-004",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "TEST-ENF-BLK-005-POS",
+      "test_group": "ARCH-CONTROL",
+      "target_type": "CONTROL",
+      "target_id": "ENF-BLK-005",
+      "polarity": "POSITIVE"
+    },
+    {
+      "test_id": "TEST-ENF-BLK-005-NEG",
+      "test_group": "ARCH-CONTROL",
+      "target_type": "CONTROL",
+      "target_id": "ENF-BLK-005",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "TEST-ENF-BLK-006-POS",
+      "test_group": "ARCH-CONTROL",
+      "target_type": "CONTROL",
+      "target_id": "ENF-BLK-006",
+      "polarity": "POSITIVE"
+    },
+    {
+      "test_id": "TEST-ENF-BLK-006-NEG",
+      "test_group": "ARCH-CONTROL",
+      "target_type": "CONTROL",
+      "target_id": "ENF-BLK-006",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "TEST-ENF-BLK-007-POS",
+      "test_group": "ARCH-CONTROL",
+      "target_type": "CONTROL",
+      "target_id": "ENF-BLK-007",
+      "polarity": "POSITIVE"
+    },
+    {
+      "test_id": "TEST-ENF-BLK-007-NEG",
+      "test_group": "ARCH-CONTROL",
+      "target_type": "CONTROL",
+      "target_id": "ENF-BLK-007",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "TEST-ENF-BLK-008-POS",
+      "test_group": "ARCH-CONTROL",
+      "target_type": "CONTROL",
+      "target_id": "ENF-BLK-008",
+      "polarity": "POSITIVE"
+    },
+    {
+      "test_id": "TEST-ENF-BLK-008-NEG",
+      "test_group": "ARCH-CONTROL",
+      "target_type": "CONTROL",
+      "target_id": "ENF-BLK-008",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "TEST-ENF-BLK-009-POS",
+      "test_group": "ARCH-CONTROL",
+      "target_type": "CONTROL",
+      "target_id": "ENF-BLK-009",
+      "polarity": "POSITIVE"
+    },
+    {
+      "test_id": "TEST-ENF-BLK-009-NEG",
+      "test_group": "ARCH-CONTROL",
+      "target_type": "CONTROL",
+      "target_id": "ENF-BLK-009",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "TEST-ENF-BLK-010-POS",
+      "test_group": "ARCH-CONTROL",
+      "target_type": "CONTROL",
+      "target_id": "ENF-BLK-010",
+      "polarity": "POSITIVE"
+    },
+    {
+      "test_id": "TEST-ENF-BLK-010-NEG",
+      "test_group": "ARCH-CONTROL",
+      "target_type": "CONTROL",
+      "target_id": "ENF-BLK-010",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "TEST-ENF-BLK-011-POS",
+      "test_group": "ARCH-CONTROL",
+      "target_type": "CONTROL",
+      "target_id": "ENF-BLK-011",
+      "polarity": "POSITIVE"
+    },
+    {
+      "test_id": "TEST-ENF-BLK-011-NEG",
+      "test_group": "ARCH-CONTROL",
+      "target_type": "CONTROL",
+      "target_id": "ENF-BLK-011",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "TEST-ENF-BLK-012-POS",
+      "test_group": "ARCH-CONTROL",
+      "target_type": "CONTROL",
+      "target_id": "ENF-BLK-012",
+      "polarity": "POSITIVE"
+    },
+    {
+      "test_id": "TEST-ENF-BLK-012-NEG",
+      "test_group": "ARCH-CONTROL",
+      "target_type": "CONTROL",
+      "target_id": "ENF-BLK-012",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "TEST-ENF-OBS-MISSING-TELEMETRY-POS",
+      "test_group": "ARCH-CONTROL",
+      "target_type": "CONTROL",
+      "target_id": "ENF-OBS-MISSING-TELEMETRY",
+      "polarity": "POSITIVE"
+    },
+    {
+      "test_id": "TEST-ENF-OBS-MISSING-TELEMETRY-NEG",
+      "test_group": "ARCH-CONTROL",
+      "target_type": "CONTROL",
+      "target_id": "ENF-OBS-MISSING-TELEMETRY",
+      "polarity": "NEGATIVE"
+    },
+    {
+      "test_id": "TEST-ENF-OBS-TIME-SEPARATION-POS",
+      "test_group": "ARCH-CONTROL",
+      "target_type": "CONTROL",
+      "target_id": "ENF-OBS-TIME-SEPARATION",
+      "polarity": "POSITIVE"
+    },
+    {
+      "test_id": "TEST-ENF-OBS-TIME-SEPARATION-NEG",
+      "test_group": "ARCH-CONTROL",
+      "target_type": "CONTROL",
+      "target_id": "ENF-OBS-TIME-SEPARATION",
+      "polarity": "NEGATIVE"
+    }
+  ]
+}

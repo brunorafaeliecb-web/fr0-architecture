@@ -1,0 +1,40 @@
+{
+  "registry_version": 1,
+  "architecture_baseline_id": "AB-FR0-001",
+  "status": "DRAFT",
+  "registry_id": "RISK-REGISTRY",
+  "risks": [
+    {
+      "risk_id": "RISK-FR0-001",
+      "name": "IndividualBootstrapConflictOfInterest",
+      "severity": "HIGH",
+      "treatment": "Tracked mitigation and independent review",
+      "owner": "Rafael",
+      "status": "ACCEPTED_TEMPORARILY"
+    },
+    {
+      "risk_id": "RISK-FR0-002",
+      "name": "SinglePersonBusFactor",
+      "severity": "HIGH",
+      "treatment": "Tracked mitigation and independent review",
+      "owner": "Rafael",
+      "status": "ACCEPTED_TEMPORARILY"
+    },
+    {
+      "risk_id": "RISK-FR0-003",
+      "name": "ReportOnlyBecomesPermanent",
+      "severity": "HIGH",
+      "treatment": "Tracked mitigation and independent review",
+      "owner": "Rafael",
+      "status": "OPEN"
+    },
+    {
+      "risk_id": "RISK-FR0-004",
+      "name": "NormativeRegistryAndImplementationDrift",
+      "severity": "HIGH",
+      "treatment": "Tracked mitigation and independent review",
+      "owner": "Rafael",
+      "status": "OPEN"
+    }
+  ]
+}

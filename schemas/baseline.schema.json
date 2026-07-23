@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "baseline_id",
+    "baseline_type",
+    "baseline_version",
+    "status",
+    "target_release",
+    "implementation_pack_id",
+    "accountability",
+    "normative_registries",
+    "integrity"
+  ],
+  "properties": {
+    "baseline_id": {
+      "const": "AB-FR0-001"
+    },
+    "baseline_type": {
+      "const": "DESIGN"
+    },
+    "baseline_version": {
+      "const": 1
+    },
+    "status": {
+      "enum": [
+        "DRAFT",
+        "APPROVED"
+      ]
+    },
+    "target_release": {
+      "const": "FR-0"
+    },
+    "implementation_pack_id": {
+      "const": "FR0-IP-001"
+    },
+    "accountability": {
+      "type": "object",
+      "required": [
+        "model",
+        "accountable_identity",
+        "independent_review_required"
+      ],
+      "properties": {
+        "model": {
+          "const": "INDIVIDUAL_BOOTSTRAP"
+        },
+        "accountable_identity": {
+          "type": "string",
+          "minLength": 1
+        },
+        "independent_review_required": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "normative_registries": {
+      "type": "object",
+      "minProperties": 12,
+      "maxProperties": 12,
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "version"
+        ],
+        "properties": {
+          "version": {
+            "const": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "integrity": {
+      "type": "object",
+      "required": [
+        "canonicalization_algorithm",
+        "digest_algorithm"
+      ],
+      "properties": {
+        "canonicalization_algorithm": {
+          "const": "RFC-8785"
+        },
+        "digest_algorithm": {
+          "const": "SHA-256"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

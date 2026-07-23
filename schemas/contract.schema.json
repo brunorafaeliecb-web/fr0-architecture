@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "registry_id",
+    "registry_version",
+    "architecture_baseline_id",
+    "status",
+    "contracts"
+  ],
+  "properties": {
+    "registry_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "registry_version": {
+      "type": "integer",
+      "const": 1
+    },
+    "architecture_baseline_id": {
+      "type": "string",
+      "const": "AB-FR0-001"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "APPROVED"
+      ]
+    },
+    "contracts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "contract_id",
+          "canonical_name",
+          "interaction_type",
+          "semantic_owner",
+          "producer_contexts",
+          "authorized_consumers",
+          "contract_version",
+          "status"
+        ],
+        "properties": {
+          "contract_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "canonical_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "interaction_type": {
+            "enum": [
+              "QUERY",
+              "COMMAND",
+              "EVENT",
+              "DECISION"
+            ]
+          },
+          "semantic_owner": {
+            "type": "string",
+            "minLength": 1
+          },
+          "producer_contexts": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "authorized_consumers": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "contract_version": {
+            "type": "integer",
+            "const": 1
+          },
+          "status": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

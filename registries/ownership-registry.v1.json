@@ -1,0 +1,258 @@
+{
+  "registry_version": 1,
+  "architecture_baseline_id": "AB-FR0-001",
+  "status": "DRAFT",
+  "registry_id": "OWNERSHIP-REGISTRY",
+  "facts": [
+    {
+      "fact_id": "FACT-ORGANIZATION-LIFECYCLE",
+      "canonical_name": "OrganizationLifecycle",
+      "semantic_owner": "CTX-ORG",
+      "transition_owner": "CTX-ORG",
+      "priority": "BLOCKER"
+    },
+    {
+      "fact_id": "FACT-PRINCIPAL-LIFECYCLE",
+      "canonical_name": "PrincipalLifecycle",
+      "semantic_owner": "CTX-IAM",
+      "transition_owner": "CTX-IAM",
+      "priority": "BLOCKER"
+    },
+    {
+      "fact_id": "FACT-ACTOR-CHAIN",
+      "canonical_name": "ActorChain",
+      "semantic_owner": "CTX-IAM",
+      "transition_owner": "CTX-IAM",
+      "priority": "BLOCKER"
+    },
+    {
+      "fact_id": "FACT-AGENT-LIFECYCLE",
+      "canonical_name": "AgentLifecycle",
+      "semantic_owner": "CTX-AGENT",
+      "transition_owner": "CTX-AGENT",
+      "priority": "BLOCKER"
+    },
+    {
+      "fact_id": "FACT-AGENT-VERSION",
+      "canonical_name": "AgentVersion",
+      "semantic_owner": "CTX-AGENT",
+      "transition_owner": "CTX-AGENT",
+      "priority": "BLOCKER"
+    },
+    {
+      "fact_id": "FACT-SESSION-LIFECYCLE",
+      "canonical_name": "SessionLifecycle",
+      "semantic_owner": "CTX-SESSION",
+      "transition_owner": "CTX-SESSION",
+      "priority": "BLOCKER"
+    },
+    {
+      "fact_id": "FACT-SESSION-BUNDLE",
+      "canonical_name": "SessionBundle",
+      "semantic_owner": "CTX-SESSION",
+      "transition_owner": "CTX-SESSION",
+      "priority": "REQUIRED_BEFORE_IMPLEMENTATION"
+    },
+    {
+      "fact_id": "FACT-OPERATION-LIFECYCLE",
+      "canonical_name": "OperationLifecycle",
+      "semantic_owner": "CTX-OPERATION",
+      "transition_owner": "CTX-OPERATION",
+      "priority": "BLOCKER"
+    },
+    {
+      "fact_id": "FACT-OPERATION-OUTCOME",
+      "canonical_name": "OperationOutcome",
+      "semantic_owner": "CTX-OPERATION",
+      "transition_owner": "CTX-OPERATION",
+      "priority": "BLOCKER"
+    },
+    {
+      "fact_id": "FACT-MODEL-ROUTING",
+      "canonical_name": "ModelRouting",
+      "semantic_owner": "CTX-AI",
+      "transition_owner": "CTX-AI",
+      "priority": "REQUIRED_BEFORE_IMPLEMENTATION"
+    },
+    {
+      "fact_id": "FACT-MEMORY-LIFECYCLE",
+      "canonical_name": "MemoryLifecycle",
+      "semantic_owner": "CTX-AI",
+      "transition_owner": "CTX-AI",
+      "priority": "REQUIRED_BEFORE_IMPLEMENTATION"
+    },
+    {
+      "fact_id": "FACT-USAGE-RIGHTS",
+      "canonical_name": "UsageRights",
+      "semantic_owner": "CTX-RIGHTS",
+      "transition_owner": "CTX-RIGHTS",
+      "priority": "BLOCKER"
+    },
+    {
+      "fact_id": "FACT-JURISDICTION-ELIGIBILITY",
+      "canonical_name": "JurisdictionEligibility",
+      "semantic_owner": "CTX-JURISDICTION",
+      "transition_owner": "CTX-JURISDICTION",
+      "priority": "BLOCKER"
+    },
+    {
+      "fact_id": "FACT-ENTITLEMENT",
+      "canonical_name": "Entitlement",
+      "semantic_owner": "CTX-COMMERCIAL",
+      "transition_owner": "CTX-COMMERCIAL",
+      "priority": "BLOCKER"
+    },
+    {
+      "fact_id": "FACT-USAGE-METERING",
+      "canonical_name": "UsageMetering",
+      "semantic_owner": "CTX-COMMERCIAL",
+      "transition_owner": "CTX-COMMERCIAL",
+      "priority": "REQUIRED_BEFORE_PRODUCTION"
+    },
+    {
+      "fact_id": "FACT-CAPACITY-ADMISSION",
+      "canonical_name": "CapacityAdmission",
+      "semantic_owner": "CTX-CAPACITY",
+      "transition_owner": "CTX-CAPACITY",
+      "priority": "BLOCKER"
+    },
+    {
+      "fact_id": "FACT-ARTIFACT-INTEGRITY",
+      "canonical_name": "ArtifactIntegrity",
+      "semantic_owner": "CTX-SUPPLY",
+      "transition_owner": "CTX-SUPPLY",
+      "priority": "BLOCKER"
+    },
+    {
+      "fact_id": "FACT-RELEASE-LIFECYCLE",
+      "canonical_name": "ReleaseLifecycle",
+      "semantic_owner": "CTX-CHANGE",
+      "transition_owner": "CTX-CHANGE",
+      "priority": "REQUIRED_BEFORE_IMPLEMENTATION"
+    },
+    {
+      "fact_id": "FACT-ARCHITECTURE-BASELINE",
+      "canonical_name": "ArchitectureBaseline",
+      "semantic_owner": "CTX-GOV",
+      "transition_owner": "CTX-GOV",
+      "priority": "BLOCKER"
+    },
+    {
+      "fact_id": "FACT-ARCHITECTURE-EXCEPTION",
+      "canonical_name": "ArchitectureException",
+      "semantic_owner": "CTX-GOV",
+      "transition_owner": "CTX-GOV",
+      "priority": "BLOCKER"
+    },
+    {
+      "fact_id": "FACT-INCIDENT-LIFECYCLE",
+      "canonical_name": "IncidentLifecycle",
+      "semantic_owner": "CTX-OPS",
+      "transition_owner": "CTX-OPS",
+      "priority": "REQUIRED_BEFORE_PRODUCTION"
+    },
+    {
+      "fact_id": "FACT-EVIDENCE-RECORD",
+      "canonical_name": "EvidenceRecord",
+      "semantic_owner": "CTX-EVIDENCE",
+      "transition_owner": "CTX-EVIDENCE",
+      "priority": "BLOCKER"
+    },
+    {
+      "fact_id": "FACT-CLOSURE-CASE",
+      "canonical_name": "ClosureCase",
+      "semantic_owner": "CTX-LIFECYCLE",
+      "transition_owner": "CTX-LIFECYCLE",
+      "priority": "REQUIRED_BEFORE_PRODUCTION"
+    },
+    {
+      "fact_id": "FACT-CONTRACT-COMPATIBILITY",
+      "canonical_name": "ContractCompatibility",
+      "semantic_owner": "CTX-EVOLUTION",
+      "transition_owner": "CTX-EVOLUTION",
+      "priority": "BLOCKER"
+    },
+    {
+      "fact_id": "FACT-EXPERIMENT-LIFECYCLE",
+      "canonical_name": "ExperimentLifecycle",
+      "semantic_owner": "CTX-EXPERIMENT",
+      "transition_owner": "CTX-EXPERIMENT",
+      "priority": "REQUIRED_BEFORE_PRODUCTION"
+    },
+    {
+      "fact_id": "FACT-JOURNEY-QUALITY",
+      "canonical_name": "JourneyQuality",
+      "semantic_owner": "CTX-QUALITY",
+      "transition_owner": "CTX-QUALITY",
+      "priority": "REQUIRED_BEFORE_PRODUCTION"
+    },
+    {
+      "fact_id": "FACT-EDGE-RUNTIME-ELIGIBILITY",
+      "canonical_name": "EdgeRuntimeEligibility",
+      "semantic_owner": "CTX-EDGE",
+      "transition_owner": "CTX-EDGE",
+      "priority": "REQUIRED_BEFORE_PRODUCTION"
+    }
+  ],
+  "decisions": [
+    {
+      "decision_id": "DEC-TENANT-BOUNDARY",
+      "canonical_name": "TenantBoundaryDecision",
+      "decision_owner": "CTX-ORG",
+      "inputs": [
+        "FACT-ORGANIZATION-LIFECYCLE",
+        "FACT-PRINCIPAL-LIFECYCLE"
+      ]
+    },
+    {
+      "decision_id": "DEC-IDENTITY-AUTHORITY",
+      "canonical_name": "IdentityAuthorityDecision",
+      "decision_owner": "CTX-IAM",
+      "inputs": [
+        "FACT-PRINCIPAL-LIFECYCLE",
+        "FACT-ACTOR-CHAIN"
+      ]
+    },
+    {
+      "decision_id": "DEC-RIGHTS-ELIGIBILITY",
+      "canonical_name": "RightsEligibilityDecision",
+      "decision_owner": "CTX-RIGHTS",
+      "inputs": [
+        "FACT-USAGE-RIGHTS"
+      ]
+    },
+    {
+      "decision_id": "DEC-JURISDICTION-ELIGIBILITY",
+      "canonical_name": "JurisdictionEligibilityDecision",
+      "decision_owner": "CTX-JURISDICTION",
+      "inputs": [
+        "FACT-JURISDICTION-ELIGIBILITY"
+      ]
+    },
+    {
+      "decision_id": "DEC-ENTITLEMENT",
+      "canonical_name": "EntitlementDecision",
+      "decision_owner": "CTX-COMMERCIAL",
+      "inputs": [
+        "FACT-ENTITLEMENT"
+      ]
+    },
+    {
+      "decision_id": "DEC-CAPACITY-ADMISSION",
+      "canonical_name": "CapacityAdmissionDecision",
+      "decision_owner": "CTX-CAPACITY",
+      "inputs": [
+        "FACT-CAPACITY-ADMISSION"
+      ]
+    },
+    {
+      "decision_id": "DEC-CONTRACT-COMPATIBILITY",
+      "canonical_name": "ContractCompatibilityDecision",
+      "decision_owner": "CTX-EVOLUTION",
+      "inputs": [
+        "FACT-CONTRACT-COMPATIBILITY"
+      ]
+    }
+  ],
+  "relationships": []
+}
