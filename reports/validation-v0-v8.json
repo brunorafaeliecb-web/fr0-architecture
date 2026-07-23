@@ -1,7 +1,7 @@
 {
   "validation_id": "VAL-AB-FR0-001-V0-V8",
   "baseline_id": "AB-FR0-001",
-  "validator_version": "1.1.0",
+  "validator_version": "1.2.0",
   "stages": {
     "V0": "PASS",
     "V1": "PASS",
@@ -13,6 +13,80 @@
     "V7": "PASS",
     "V8": "PASS"
   },
+  "stage_details": [
+    {
+      "stage_id": "V0",
+      "canonical_name": "ArtifactDiscovery",
+      "required": true,
+      "result": "PASS",
+      "blocked_by": [],
+      "finding_count": 0
+    },
+    {
+      "stage_id": "V1",
+      "canonical_name": "SchemaValidation",
+      "required": true,
+      "result": "PASS",
+      "blocked_by": [],
+      "finding_count": 0
+    },
+    {
+      "stage_id": "V2",
+      "canonical_name": "IdentityAndUniqueness",
+      "required": true,
+      "result": "PASS",
+      "blocked_by": [],
+      "finding_count": 0
+    },
+    {
+      "stage_id": "V3",
+      "canonical_name": "ReferenceIntegrity",
+      "required": true,
+      "result": "PASS",
+      "blocked_by": [],
+      "finding_count": 0
+    },
+    {
+      "stage_id": "V4",
+      "canonical_name": "OwnershipConsistency",
+      "required": true,
+      "result": "PASS",
+      "blocked_by": [],
+      "finding_count": 0
+    },
+    {
+      "stage_id": "V5",
+      "canonical_name": "DependencyConsistency",
+      "required": true,
+      "result": "PASS",
+      "blocked_by": [],
+      "finding_count": 0
+    },
+    {
+      "stage_id": "V6",
+      "canonical_name": "ContractCompatibility",
+      "required": true,
+      "result": "PASS",
+      "blocked_by": [],
+      "finding_count": 0
+    },
+    {
+      "stage_id": "V7",
+      "canonical_name": "InvariantCoverage",
+      "required": true,
+      "result": "PASS",
+      "blocked_by": [],
+      "finding_count": 0
+    },
+    {
+      "stage_id": "V8",
+      "canonical_name": "ExceptionValidation",
+      "required": true,
+      "result": "PASS",
+      "blocked_by": [],
+      "finding_count": 0
+    }
+  ],
   "result": "PASS",
   "findings": []
 }

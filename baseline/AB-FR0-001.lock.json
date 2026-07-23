@@ -8,7 +8,7 @@
   },
   "digest": {
     "algorithm": "SHA-256",
-    "baseline_digest": "bf6e94b578c1a9a6e2cbd3cddbd9d681d4fa2a8d2abf9a411a0751e1f6ee6bad"
+    "baseline_digest": "36d44bbb62a34241be634651226fc65632c48a93b4c38ee883ea1b5c11ebaed3"
   },
   "registries": {
     "context": {
@@ -74,7 +74,7 @@
   },
   "validation": {
     "validation_id": "VAL-AB-FR0-001-V0-V8",
-    "validator_version": "1.1.0",
+    "validator_version": "1.2.0",
     "stages": {
       "V0": "PASS",
       "V1": "PASS",
