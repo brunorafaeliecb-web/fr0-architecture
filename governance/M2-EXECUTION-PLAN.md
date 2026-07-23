@@ -47,7 +47,7 @@ Cada work package deverá:
 | M2-G1 | Escopo e dependências confirmados | SATISFIED |
 | M2-G2 | Work packages implementados | SATISFIED |
 | M2-G3 | Integração e testes concluídos | SATISFIED |
-| M2-G4 | Release manifest e encerramento | IN_PROGRESS |
+| M2-G4 | Release manifest e encerramento | SATISFIED |
 
 ## Decisão
 
