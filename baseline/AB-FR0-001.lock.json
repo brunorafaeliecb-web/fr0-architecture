@@ -8,7 +8,7 @@
   },
   "digest": {
     "algorithm": "SHA-256",
-    "baseline_digest": "36d44bbb62a34241be634651226fc65632c48a93b4c38ee883ea1b5c11ebaed3"
+    "baseline_digest": "122187697663220b63704c6c37642165f93859b95ba96f075fc7441dd43ab0a6"
   },
   "registries": {
     "context": {
@@ -19,7 +19,7 @@
     "ownership": {
       "registry_id": "OWNERSHIP-REGISTRY",
       "version": 1,
-      "digest": "48633ca8acebb3346d8ee81740d28631b40c3ca3fcad9685899cde76204574dc"
+      "digest": "dbdb17a90adb7d25fbddf6134214f824d530dfb19534fcd955bacc47c6faacea"
     },
     "invariant": {
       "registry_id": "INVARIANT-REGISTRY",
