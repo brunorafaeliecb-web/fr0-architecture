@@ -252,6 +252,14 @@
       "inputs": [
         "FACT-CONTRACT-COMPATIBILITY"
       ]
+    },
+    {
+      "decision_id": "DEC-RELEASE-ACTIVATION",
+      "canonical_name": "ReleaseActivationDecision",
+      "decision_owner": "CTX-CHANGE",
+      "inputs": [
+        "FACT-RELEASE-LIFECYCLE"
+      ]
     }
   ],
   "relationships": []
